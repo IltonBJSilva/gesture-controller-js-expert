@@ -1,18 +1,14 @@
 export default class Controller {
-  #view
-  #camera
-  #worker
-  #blinkCounter = 0
-  constructor({ view, worker, camera }) {
+  constructor({}) {
 
   }
 
   static async initialize(deps) {
-    const controller = new CardsController(deps)
+    const controller = new Controller(deps)
     return controller.init()
   }
 
   async init(){
-    
+    console.log('init')
   }
 }
