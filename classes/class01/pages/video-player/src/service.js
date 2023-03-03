@@ -1,5 +1,7 @@
 export default class Service {
-  constructor({}){
+  #model = null
+  #faceLandmarksDetection
+  constructor({faceLandmarksDetection =}){
 
   }
 }
